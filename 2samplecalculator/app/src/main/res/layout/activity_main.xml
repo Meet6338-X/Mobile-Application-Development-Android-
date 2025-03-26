@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 1"
+        android:id="@+id/e1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number 2"
+        android:id="@+id/e2"
+        />
+        <TableRow
+            >
+            <Button
+                android:id="@+id/addbtn"
+                android:text="add"
+                android:layout_margin="2dp"
+                android:onClick="addition"
+                />
+            <Button
+                android:id="@+id/subbtn"
+                android:text="sub"
+                android:layout_margin="2dp"
+                android:onClick="subtraction"
+                />
+            <Button
+                android:id="@+id/mulbtn"
+                android:text="mul"
+                android:layout_margin="2dp"
+                android:onClick="multiplication"
+                />
+            <Button
+                android:id="@+id/divbtn"
+                android:text="div"
+                android:layout_margin="2dp"
+                android:onClick="division"
+                />
+        </TableRow>
+    <TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/result1"
+        android:textSize="30dp"
+        />
+    </TableRow>
+</TableLayout>
