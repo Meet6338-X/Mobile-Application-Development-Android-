@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "snehalogiccurrentlocation"
+rootProject.name = "18currentlocation"
 include ':app'

@@ -1,4 +1,4 @@
-package com.example.snehalogiccurrentlocation;
+package com.example.a18currentlocation;
 
 import org.junit.Test;
 
