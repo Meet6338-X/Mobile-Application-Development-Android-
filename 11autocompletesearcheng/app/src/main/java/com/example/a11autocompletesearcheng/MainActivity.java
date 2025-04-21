@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         autocomp = findViewById(R.id.autocomp);
-        ArrayAdapter arrayAdapter = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,Searcheng);
+        ArrayAdapter arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.activity_list_item,Searcheng);
         autocomp.setAdapter(arrayAdapter);
     }
 }

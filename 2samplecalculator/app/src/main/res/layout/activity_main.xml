@@ -16,8 +16,7 @@
         android:hint="Enter Number 2"
         android:id="@+id/e2"
         />
-        <TableRow
-            >
+        <TableRow>
             <Button
                 android:id="@+id/addbtn"
                 android:text="add"

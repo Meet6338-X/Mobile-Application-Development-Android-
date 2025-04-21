@@ -20,18 +20,21 @@ public class MainActivity extends AppCompatActivity {
                 {"1", "Meet Shah",  "A"},
                 {"2", "Vedant Pawer", "B"},
                 {"3", "Shivam Raut", "A"},
-                {"4", "Sneha Naik", "C"},
+                {"4", "Pooja Wavdara", "C"},
                 {"5", "Shivam Potpalliwar","B"},
-                {"6", "Sneha Navender", "A"},
+                {"6", "Sneha Navander", "A"},
                 {"7", "Shristi Tapse", "B"},
                 {"8", "Sristi pawer", "A"},
                 {"9", "Neha Salvi", "C"},
                 {"10", "Shivaji Rathod", "B"}
         };
 
-        for (String[] student : students) {
+
+        for (String[] student : students)
+        {
             TableRow row = new TableRow(this);
-            for (String data : student) {
+            for (String data : student)
+            {
                 TextView textView = new TextView(this);
                 textView.setText(data);
                 textView.setPadding(10, 10, 10, 10);

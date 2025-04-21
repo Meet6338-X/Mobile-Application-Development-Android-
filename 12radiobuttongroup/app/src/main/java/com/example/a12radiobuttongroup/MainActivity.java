@@ -23,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public void displayselectedradio(View view)
     {
-        if (rd1.isChecked()){
+        if (rd1.isChecked())
+        {
             Toast.makeText(getApplicationContext(),"Radio button 1 Selected",Toast.LENGTH_SHORT).show();
         }
-        if (rd2.isChecked()){
+        if (rd2.isChecked())
+        {
             Toast.makeText(getApplicationContext(),"Radio button 2 Selected",Toast.LENGTH_SHORT).show();
         }
         if (male.isChecked())

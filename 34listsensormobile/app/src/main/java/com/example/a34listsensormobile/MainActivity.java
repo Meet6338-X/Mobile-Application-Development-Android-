@@ -14,18 +14,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         TextView textView = new TextView(this);
         setContentView(textView);
-
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         List<Sensor> sensorList = sensorManager.getSensorList(Sensor.TYPE_ALL);
-
         StringBuilder sensorInfo = new StringBuilder("Sensors:\n");
-        for (Sensor sensor : sensorList) {
-            sensorInfo.append(sensor.getName()).append("\n");
+        for (Sensor sen : sensorList) {
+            sensorInfo.append(sen.getName()).append("\n");
         }
-
         textView.setText(sensorInfo.toString());
     }
 }

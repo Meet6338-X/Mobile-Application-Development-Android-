@@ -21,6 +21,4 @@
         android:text="Get Factorial"
         android:onClick="factorialnum"
         />
-
-
 </LinearLayout>

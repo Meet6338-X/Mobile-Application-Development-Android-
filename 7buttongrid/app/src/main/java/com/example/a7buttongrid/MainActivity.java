@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         grd1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, buttons[i] + " Clicked",Toast.LENGTH_LONG).show();
+            public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
+                Toast.makeText(MainActivity.this, buttons[pos], Toast.LENGTH_SHORT).show();
             }
         });
     }

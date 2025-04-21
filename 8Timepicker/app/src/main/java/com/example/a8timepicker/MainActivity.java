@@ -15,23 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         timep = findViewById(R.id.timep);
-        timep.setIs24HourView(false);
+        timep.setIs24HourView(true);
         tv = findViewById(R.id.tv);
-//        timep.getCurrentHour();
-//        timep.getCurrentMinute();
         timep.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             public void onTimeChanged(TimePicker timePicker, int i, int i1) {
-                String amPm = (i < 12) ? "AM" : "PM";
-                if(amPm=="PM")
-                {
-                    newtime = i-12;
-                    tv.setText(newtime + ":" + i1 + amPm);
-                }
-                else
-                {
-                    tv.setText(i + ":" + i1 + amPm);
-                }
+                String hh=Integer.toString(i);
+                String mm=Integer.toString(i1);
+                tv.setText(hh+":"+mm);
             }
         });
     }

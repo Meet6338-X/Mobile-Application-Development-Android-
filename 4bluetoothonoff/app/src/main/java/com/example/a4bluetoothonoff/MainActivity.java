@@ -26,12 +26,9 @@ public class MainActivity extends AppCompatActivity {
         tg1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b)
-                {
+                if (b) {
                     turnonbluetooth(null);
-                }
-                else
-                {
+                } else {
                     turnoffbluetooth(null);
                 }
             }
